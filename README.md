@@ -22,6 +22,7 @@ as our conventions.
 ### 7 Golden Rules
 When commiting changes, one must adhere to the following [rules] 
 (http://chris.beams.io/posts/git-commit/):
+
 1. Separate subject from body with a blank line
 2. Limit the subject line to roughly 50 characters
 3. Capitalise the subject line
