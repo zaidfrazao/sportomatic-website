@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Neuton', serif;
+}
+
+.jumbotron {
+  padding: 0px;
+}
+
+.main-nav {
+  background-color: #ffffff;
+  height: 70px;
+  padding-top: 10px;
+}
+
+.home-banner {
+  background-image: url("../img/banner-bg.jpg");
+  height: 100vh;
+}
+
+.home-banner-info {
+  padding-top: 20%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home-banner-info>h2 {
+  font-size: 2.5em;
+}
+
+.home-banner-info>p {
+  font-size: 1.2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  width: 60%;
+}
+
+#home-about {
+  height: 400px;
+  padding: 100px 40px;
+}
+
+#home-blog {
+  height: 400px;
+  padding: 100px 40px;
+}
+
+.feature {
+  margin: 100px 0px;
+}
+
+.social-media-btns {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.social-media-btns li {
+  display: inline;
+  margin: 5px;
+}
+
+.social-media-btns img {
+  height: 30px;
+  width: 30px;
+}
+
+.sitemap ul {
+  list-style-type: none; 
+  padding: 0px;
+}

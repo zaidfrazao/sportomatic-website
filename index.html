@@ -15,50 +15,65 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Neuton" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/default.css" media="screen">
   </head>
 
   <body>
-    <div class="container">
-      <!-- Main site navigation bar -->
-      <nav class="main-nav">
-        <h1 class="hidden">Sportomatic</h1>
-        <a href="#"><img src="img/logo.png" alt=""></a>
-        <ul>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-        <form id="site-search">
-          Search:<input type="search" name="search"><br>
-          <input type="submit" value="Search">
-        </form>
-        <a id="login-btn" href="login.html">Login</a>
-      </nav>
+    <!-- Main site navigation bar -->
+    <nav class="main-nav navbar navbar-default navbar-fixed-top">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="navbar-header">
+            <h1 class="hidden">Sportomatic</h1>
+            <a href="#"><img src="img/logo.png" alt="" height="50px"></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#home-about">About</a></li>
+            <li><a href="#home-features">Features</a></li>
+            <li><a href="#home-pricing">Pricing</a></li>
+            <li><a href="#home-blog">Blog</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="signup-btn" href="#"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
+            <li><a id="login-btn" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </nav>
 
-      <!-- "Above the fold" banner content -->
-      <header>
-        <p>The sports management suite that takes your institution to the next
-        level.</p>
-        <p>Oversee your managers and coaches from one convenient location. 
-        We'll handle the admin so you can focus on the trophies.</p>
-        <img src="img/home-banner.jpg" alt="The Sportomatic app displayed on an 
-        iPhone, Android tablet and Desktop computer monitor.">
-
-        <div id="banner-btns">
-          <a id="ios-download" href="" title="Download Sportomatic from the App Store.">iOS Download</a>
-          <a id="android-download" href="" title="Download Sportomatic from the Google Play Store.">Android Download</a>
-          <a id="learn-more" href="#features">Learn more</a>
+    <!-- "Above the fold" banner content -->
+    <div class="jumbotron">
+      <header class="home-banner">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 home-banner-info">
+            <h2>The sports management suite <br>that takes your institution <br>to the next
+            level.</h2>
+            <p>Oversee your managers and coaches from one convenient location. 
+            We'll handle the admin so you can focus on the trophies.</p>
+            <div id="banner-btns">
+              <a class="btn btn-default btn-lg" id="ios-download" href="" title="Download Sportomatic from the App Store.">iOS Download</a>
+              <a class="btn btn-default btn-lg" id="android-download" href="" title="Download Sportomatic from the Google Play Store.">Android Download</a>
+              <a class="btn btn-default btn-lg" id="learn-more" href="#features">Learn more</a>
+            </div>
+          </div>
+          <div class="col-lg-6"></div>
         </div>
       </header>
+    </div>
 
+    <div class="container">
       <!-- Main content -->
       <main>
         <!-- About section -->
-        <section id="about">
+        <section id="home-about">
           <h2>The future of sports management.</h2>
           <p>Sportomatic isn't just an app. It's a revolution in sports management. 
           The devices we carry around with us are capable of so much. It's time to start using
@@ -67,98 +82,161 @@
         </section>
 
         <!-- Features section -->
-        <section id="features">
+        <section id="home-features">
           <h2>Packed with tons of features.</h2>
           <p>Sportomatic has the tools to make administrating sport a whole
           lot easier. You'll wonder how you've been doing things without them for so long.</p>
 
           <!-- Scheduling -->
-          <section id="scheduling" class="left-feature">
-            <img src="img/icons/scheduling.png" alt="">
-            <h3>Scheduling</h3>
-            <p>Set schedules for the season so that your managers and coaches know where
-            they need to be and when they need to be there.</p>
-            <a href="features.html#scheduling">Learn more</a>
+          <section id="scheduling" class="feature">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                <img src="img/icons/scheduling.png" alt="">
+              </div>
+              <div class="col-lg-3">
+                <h3>Scheduling</h3>
+                <p>Set schedules for the season so that your managers and coaches know where
+                they need to be and when they need to be there.</p>
+                <a href="features.html#scheduling">Learn more</a>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
           </section>
 
           <!-- Hour logging -->
-          <section id="hour-logging" class="right-feature">
-            <img src="img/icons/hour-logging.png" alt="">
-            <h3>Hour Logging</h3>
-            <p>Still using pen and paper to figure out how much you owe your
-            coaches at the end of the month? Not any more. Sportomatic tracks hours
-            to make sure everyone gets paid what they deserve.</p>
-            <a href="features.html#hour-logging">Learn more</a>
+          <section id="hour-logging" class="feature">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                <h3>Hour Logging</h3>
+                <p>Still using pen and paper to figure out how much you owe your
+                coaches at the end of the month? Not any more. Sportomatic tracks hours
+                to make sure everyone gets paid what they deserve.</p>
+                <a href="features.html#hour-logging">Learn more</a>
+              </div>
+              <div class="col-lg-3">
+                <img src="img/icons/hour-logging.png" alt="">
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
           </section>
 
-          <!-- User Accounts -->
-          <section id="user-accounts" class="left-feature">
-            <img src="img/icons/user-accounts.png" alt="">
-            <h3>User Accounts</h3>
-            <p>All of your managers and coaches get their own free accounts.
-            Everyone will have secure access to the most important info whenever
-            they need it.</p>
-            <a href="features.html#user-accounts">Learn more</a>
+          <!-- User accounts -->
+          <section id="user-accounts" class="feature">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                <img src="img/icons/user-accounts.png" alt="">
+              </div>
+              <div class="col-lg-3">
+                <h3>User Accounts</h3>
+                <p>All of your managers and coaches get their own free accounts.
+                Everyone will have secure access to the most important info whenever
+                they need it.</p>
+                <a href="features.html#user-accounts">Learn more</a>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
           </section>
 
           <!-- Notifications -->
           <!-- TODO: Add the right word for [payment invoices] -->
-          <section id="notifications" class="right-feature">
-            <img src="img/icons/notifications.png" alt="">
-            <h3>Notifications</h3>
-            <p>Sportomatic is smart enough to automatically know when your staff 
-            need to be reminded of practice or you need to be reminded to send
-            your coaches their [payment invoices].</p>
-            <a href="features.html#notifications">Learn more</a>
+          <section id="notifications" class="feature">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                <h3>Notifications</h3>
+                <p>Sportomatic is smart enough to automatically know when your staff 
+                need to be reminded of practice or you need to be reminded to send
+                your coaches their [payment invoices].</p>
+                <a href="features.html#notifications">Learn more</a>
+              </div>
+              <div class="col-lg-3">
+                <img src="img/icons/notifications.png" alt="">
+              </div>
+
+              <div class="col-lg-3"></div>
+            </div>
           </section>
 
           <!-- Reports -->
-          <section id="reports" class="left-feature">
-            <img src="img/icons/reports.png" alt="">
-            <h3>Reports</h3>
-            <p>You'll receive regular reports of hours logged so that you
-            always know how much money you're payng everyone (and who's been
-            missing practices).</p>
-            <a href="features.html#reports">Learn more</a>
+          <section id="reports" class="feature">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                <img src="img/icons/reports.png" alt="">
+              </div>
+              <div class="col-lg-3">
+                <h3>Reports</h3>
+                <p>You'll receive regular reports of hours logged so that you
+                always know how much money you're payng everyone (and who's been
+                missing practices).</p>
+                <a href="features.html#reports">Learn more</a>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
           </section>
 
           <!-- Analytics -->
-          <section id="analytics" class="right-feature">
-            <img src="img/icons/analytics.png" alt="">
-            <h3>Analytics</h3>
-            <p>It's important to monitor trends to know where you can optimise
-            and how best to do it. Sportomatic makes that easy.</p>
-            <a href="features.html#analytics">Learn more</a>
+          <section id="analytics" class="feature">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                <h3>Analytics</h3>
+                <p>It's important to monitor trends to know where you can optimise
+                and how best to do it. Sportomatic makes that easy.</p>
+                <a href="features.html#analytics">Learn more</a>
+              </div>
+              <div class="col-lg-3">
+                <img src="img/icons/analytics.png" alt="">
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
           </section>
 
-
           <!-- Billing -->
-          <section id="billing" class="left-feature">
-            <img src="img/icons/billing.png" alt="">
-            <h3>Billing</h3>
-            <p>Sportomatic automatically generates bills for coaching salaries, 
-            automatically sends those bills to the relevant people, and 
-            automatically stores secure copies of them on the cloud.</p>
-            <a href="features.html#billing">Learn more</a>
+          <section id="billing" class="feature">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                <img src="img/icons/billing.png" alt="">
+              </div>
+              <div class="col-lg-3">
+                <h3>Billing</h3>
+                <p>Sportomatic automatically generates bills for coaching salaries, 
+                automatically sends those bills to the relevant people, and 
+                automatically stores secure copies of them on the cloud.</p>
+                <a href="features.html#billing">Learn more</a>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
           </section>
 
           <!-- More to come -->
-          <section id="future" class="right-feature">
-            <img src="img/icons/future.png" alt="">
-            <h3>More to come...</h3>
-            <p>We want Sportomatic to be the app that handles all of your sports
-            management needs, so this isn't the end. The future will bring many
-            more exciting features that will completely change how you manage your
-            sports!</p>
-            <a href="features.html#future">Learn more</a>
+          <section id="future" class="feature">
+            <div class="row">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-3">
+                <h3>More to come...</h3>
+                <p>We want Sportomatic to be the app that handles all of your sports
+                management needs, so this isn't the end. The future will bring many
+                more exciting features that will completely change how you manage your
+                sports!</p>
+                <a href="features.html#future">Learn more</a>
+              </div>
+              <div class="col-lg-3">
+                <img src="img/icons/future.png" alt="">
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
           </section>
-        </section>
 
         <!-- Pricing section -->
         <!-- TODO: Add short summary of price structre and link to pricing page -->
 
         <!-- Blog -->
-        <section id="blog">
+        <section id="home-blog">
           <h2>Stay informed.</h2>
           <p>Our blog will keep you updated with the latest in sports management,
           technology in sports, and the South African sports scene.</p>
@@ -168,92 +246,105 @@
       
       <!-- Footer content -->
       <footer>
+        <div class="row">
         <!-- Contact -->
-        <section id="footer-contact">
-          <h2>Contact Us</h2>
-          <p>Want to get in touch with us? Send us an email, contact our support or 
-          talk to us on social media.</p>
-
-          <div class="contact-type">
-            <h3>Email Us</h3>
-            <img src="img/icons/email-2.png" alt="">
-            <p>Email any queries or suggestions to:</p>
-            <p class="contact-detail">info@sportomatic.co.za</p>
+          <div class="col-lg-2">
+            <section class="footer-contact">
+              <h3>Contact Us</h3>
+              <div class="contact-type">
+                <h4>Email Us</h4>
+                <img src="img/icons/email-2.png" alt="">
+                <p>Email any queries or suggestions to:</p>
+                <p class="contact-detail">info@sportomatic.co.za</p>
+              </div>
+              <div class="contact-type">
+                <h4>Call Us</h4>
+                <img src="img/icons/call.png" alt="">
+                <p>Speak to us at:</p>
+                <p class="contact-detail">011-021-0202</p>
+              </div>
+              <div class="contact-type">
+                <h4>Support</h4>
+                <img src="img/icons/support.png" alt="">
+                <p>Email:</p>
+                <p class="contact-detail">support@sportomatic.co.za</p>
+                <p>Call:</p>
+                <p class="contact-detail">011-021-0202</p>
+              </div>
+            </section>
           </div>
 
-          <div class="contact-type">
-            <h3>Call Us</h3>
-            <img src="img/icons/call.png" alt="">
-            <p>Speak to us at:</p>
-            <p class="contact-detail">011-021-0202</p>
+          <!-- Social media -->
+          <div class="col-lg-2">
+            <section class="footer-social">
+              <h3>Follow Us</h3>
+              <ul class="social-media-btns">
+                <li><a href="" title="Like us on Facebook!">
+                    <img src="img/icons/big-facebook.png" alt=""></a></li>
+                <li><a href="" title="Follow us on Twitter!">
+                    <img src="img/icons/big-twitter.png" alt=""></a></li>
+                <li><a href="" title="Follow us on Pinterest!">
+                    <img src="img/icons/big-pinterest.png" alt=""></a></li>
+                <li><a href="" title="Follow us on Instagram!">
+                    <img src="img/icons/big-instagram.png" alt=""></a></li>
+                <li><a href="" title="View our LinkIn company profile!">
+                    <img src="img/icons/big-linkedin.png" alt=""></a></li>
+                <li><a href="" title="Follow us on Google+!">
+                    <img src="img/icons/big-google-plus.png" alt=""></a></li>
+              </ul>
+            </section>
           </div>
 
-          <div class="contact-type">
-            <h3>Support</h3>
-            <img src="img/icons/support.png" alt="">
-            <p>Email:</p>
-            <p class="contact-detail">support@sportomatic.co.za</p>
-            <p>Call:</p>
-            <p class="contact-detail">011-021-0202</p>
-          </div>
-        </section>
-
-        <!-- Social media -->
-        <section id="footer-social">
-          <h3>Follow Us</h3>
-          <ul id="social-media-btns">
-            <li><a href="" title="Like us on Facebook!">
-                <img src="img/icons/big-facebook.png" alt=""></a></li>
-            <li><a href="" title="Follow us on Twitter!">
-                <img src="img/icons/big-twitter.png" alt=""></a></li>
-            <li><a href="" title="Follow us on Pinterest!">
-                <img src="img/icons/big-pinterest.png" alt=""></a></li>
-            <li><a href="" title="Follow us on Instagram!">
-                <img src="img/icons/big-instagram.png" alt=""></a></li>
-            <li><a href="" title="View our LinkIn company profile!">
-                <img src="img/icons/big-linkedin.png" alt=""></a></li>
-            <li><a href="" title="Follow us on Google+!">
-                <img src="img/icons/big-google-plus.png" alt=""></a></li>
-          </ul>
-        </section>
-
-        <!-- Sitemap -->
-        <nav id="sitemap">
-          <h3>About</h3>
-          <ul>
-            <li><a href="about.html#vision">Vision</a></li>
-            <li><a href="about.html#values">Values</a></li>
-            <li><a href="about.html#team">Team</a></li>
-            <li><a href="about.html#contact">Contact</a></li>
-          </ul>
-          <h3>Features</h3>
-          <ul>
-            <li><a href="features.html#scheduling">Scheduling</a></li>
-            <li><a href="about.html#hour-logging">Hour logging</a></li>
-            <li><a href="about.html#user-accounts">User accounts</a></li>
-            <li><a href="about.html#notifications">Notifications</a></li>
-            <li><a href="about.html#reports">Reports</a></li>
-            <li><a href="about.html#analytics">Analytics</a></li>
-            <li><a href="about.html#billing">Billing</a></li>
-          </ul>
-          <h3>Pricing</h3>
-          <ul>
-            <li><a href="pricing.html#basic">Basic</a></li>
-            <li><a href="pricing.html#plus">Plus</a></li>
-            <li><a href="pricing.html#premium">Premium</a></li>
-          </ul>
-          <h3>Blog</h3>
-          <ul>
-            <li><a href="blog/index.html">Home</a></li>
-          </ul>
-        </nav>
+          <!-- Sitemap -->
+          <nav class="sitemap">
+            <div class="col-lg-2">
+              <h3>About</h3>
+              <ul>
+                <li><a href="about.html#vision">Vision</a></li>
+                <li><a href="about.html#values">Values</a></li>
+                <li><a href="about.html#team">Team</a></li>
+                <li><a href="about.html#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h3>Features</h3>
+              <ul>
+                <li><a href="features.html#scheduling">Scheduling</a></li>
+                <li><a href="about.html#hour-logging">Hour logging</a></li>
+                <li><a href="about.html#user-accounts">User accounts</a></li>
+                <li><a href="about.html#notifications">Notifications</a></li>
+                <li><a href="about.html#reports">Reports</a></li>
+                <li><a href="about.html#analytics">Analytics</a></li>
+                <li><a href="about.html#billing">Billing</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h3>Pricing</h3>
+              <ul>
+                <li><a href="pricing.html#basic">Basic</a></li>
+                <li><a href="pricing.html#plus">Plus</a></li>
+                <li><a href="pricing.html#premium">Premium</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h3>Blog</h3>
+              <ul>
+                <li><a href="blog/index.html">Home</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
         <!-- Legal -->
-        <section id="footer-legal">
-          <h3 class="hidden">Legal information</h3>
-          <p>© Copyright 2016 Sportomatic. All Rights Reserved.</p> 
-          <p>Media designed by Freepik and distributed by Flaticon.</p> 
-        </section>
+        <div class="row">
+          <div class="col-lg-12">
+            <section id="footer-legal">
+              <h3 class="hidden">Legal information</h3>
+              <p>© Copyright 2016 Sportomatic. All Rights Reserved.</p> 
+              <p>Media designed by Freepik and distributed by Flaticon.</p> 
+            </section>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
