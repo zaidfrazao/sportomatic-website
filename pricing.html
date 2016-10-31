@@ -7,157 +7,167 @@
     <meta name="keywords" content="Sports, Management, Software, Price,
     Pricing, Basic, Plus, Premium, Sportomatic">
     <meta name="author" content="Zaid Frazao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pricing | Sportomatic</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/default.css" media="screen">
   </head>
 
   <body>
-    <!-- Main site navigation bar -->
-    <nav class="main-nav">
-      <h1 class="hidden">Sportomatic</h1>
-      <a href="index.html"><img src="img/logo.png" alt=""></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li class="active"><a href="#">Pricing</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-      </ul>
-      <form id="site-search">
-        Search:<input type="search" name="search"><br>
-        <input type="submit" value="Search">
-      </form>
-      <a id="login-btn" href="login.html">Login</a>
-    </nav>
-
-    <!-- Header content -->
-    <header>
-      <h2>Find the package that suits your needs.</h2>
-      <p>We've built pricing plans catered towards different kinds of institutions.
-      Whether you're a small institution that just needs the basics, or a sporting
-      powerhouse that needs it all, we've got you covered.</p>
-    </header>
-
-    <!-- Secondary "floating" navigation bar -->
-    <nav class="secondary-nav">
-      <ul>
-        <li><a href="#basic">Basic</a></li>
-        <li><a href="#plus">Plus</a></li>
-        <li><a href="#premium">Premium</a></li>
-      </ul>
-      <a id="signup-btn" href="signup.html">Sign Up Free</a>
-    </nav>
-
-    <!-- Main content -->
-    <!-- TODO: Create pricing plans -->
-    <main> 
-      <!-- Basic -->
-      <section id="basic"> 
-        <img src="img/icons/basic.png" alt="">
-        <h3>The necessesities.</h3>
-      </section>
-
-      <!-- Plus -->
-      <section id="plus">
-        <img src="img/icons/plus.png" alt="">
-        <h3>One powerful app to manage everyone.</h3>
-      </section>
-
-      <!-- Premium -->
-      <section id="premium">
-        <img src="img/icons/premium.png" alt="">
-        <h3>The complete package.</h3>
-      </section>
-    </main>
-
-    <!-- Footer content -->
-    <footer>
-      <!-- Contact -->
-      <section id="footer-contact">
-        <h2>Contact Us</h2>
-        <p>Want to get in touch with us? Send us an email, contact our support or 
-        talk to us on social media.</p>
-
-        <div class="contact-type">
-          <h3>Email Us</h3>
-          <img src="img/icons/email-2.png" alt="">
-          <p>Email any queries or suggestions to:</p>
-          <p class="contact-detail">info@sportomatic.co.za</p>
-        </div>
-
-        <div class="contact-type">
-          <h3>Call Us</h3>
-          <img src="img/icons/call.png" alt="">
-          <p>Speak to us at:</p>
-          <p class="contact-detail">011-021-0202</p>
-        </div>
-
-        <div class="contact-type">
-          <h3>Support</h3>
-          <img src="img/icons/support.png" alt="">
-          <p>Email:</p>
-          <p class="contact-detail">support@sportomatic.co.za</p>
-          <p>Call:</p>
-          <p class="contact-detail">011-021-0202</p>
-        </div>
-      </section>
-
-      <!-- Social media -->
-      <section id="footer-social">
-        <h3>Follow Us</h3>
-        <ul id="social-media-btns">
-          <li><a href="" title="Like us on Facebook!">
-              <img src="img/icons/big-facebook.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Twitter!">
-              <img src="img/icons/big-twitter.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Pinterest!">
-              <img src="img/icons/big-pinterest.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Instagram!">
-              <img src="img/icons/big-instagram.png" alt=""></a></li>
-          <li><a href="" title="View our LinkIn company profile!">
-              <img src="img/icons/big-linkedin.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Google+!">
-              <img src="img/icons/big-google-plus.png" alt=""></a></li>
-        </ul>
-      </section>
-
-      <!-- Sitemap -->
-      <nav id="sitemap">
-        <h3>About</h3>
+    <div class="container">
+      <!-- Main site navigation bar -->
+      <nav class="main-nav">
+        <h1 class="hidden">Sportomatic</h1>
+        <a href="index.html"><img src="img/logo.png" alt=""></a>
         <ul>
-          <li><a href="about.html#vision">Vision</a></li>
-          <li><a href="about.html#values">Values</a></li>
-          <li><a href="about.html#team">Team</a></li>
-          <li><a href="about.html#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li class="active"><a href="#">Pricing</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
         </ul>
-        <h3>Features</h3>
-        <ul>
-          <li><a href="features.html#scheduling">Scheduling</a></li>
-          <li><a href="about.html#hour-logging">Hour logging</a></li>
-          <li><a href="about.html#user-accounts">User accounts</a></li>
-          <li><a href="about.html#notifications">Notifications</a></li>
-          <li><a href="about.html#reports">Reports</a></li>
-          <li><a href="about.html#analytics">Analytics</a></li>
-          <li><a href="about.html#billing">Billing</a></li>
-        </ul>
-        <h3>Pricing</h3>
-        <ul>
-          <li><a href="pricing.html#basic">Basic</a></li>
-          <li><a href="pricing.html#plus">Plus</a></li>
-          <li><a href="pricing.html#premium">Premium</a></li>
-        </ul>
-        <h3>Blog</h3>
-        <ul>
-          <li><a href="blog/index.html">Home</a></li>
-        </ul>
+        <form id="site-search">
+          Search:<input type="search" name="search"><br>
+          <input type="submit" value="Search">
+        </form>
+        <a id="login-btn" href="login.html">Login</a>
       </nav>
 
-      <!-- Legal -->
-      <section id="footer-legal">
-        <h3 class="hidden">Legal information</h3>
-        <p>© Copyright 2016 Sportomatic. All Rights Reserved.</p> 
-        <p>Media designed by Freepik and distributed by Flaticon.</p> 
-      </section>
-    </footer>
+      <!-- Header content -->
+      <header>
+        <h2>Find the package that suits your needs.</h2>
+        <p>We've built pricing plans catered towards different kinds of institutions.
+        Whether you're a small institution that just needs the basics, or a sporting
+        powerhouse that needs it all, we've got you covered.</p>
+      </header>
+
+      <!-- Secondary "floating" navigation bar -->
+      <nav class="secondary-nav">
+        <ul>
+          <li><a href="#basic">Basic</a></li>
+          <li><a href="#plus">Plus</a></li>
+          <li><a href="#premium">Premium</a></li>
+        </ul>
+        <a id="signup-btn" href="signup.html">Sign Up Free</a>
+      </nav>
+
+      <!-- Main content -->
+      <!-- TODO: Create pricing plans -->
+      <main> 
+        <!-- Basic -->
+        <section id="basic"> 
+          <img src="img/icons/basic.png" alt="">
+          <h3>The necessesities.</h3>
+        </section>
+
+        <!-- Plus -->
+        <section id="plus">
+          <img src="img/icons/plus.png" alt="">
+          <h3>One powerful app to manage everyone.</h3>
+        </section>
+
+        <!-- Premium -->
+        <section id="premium">
+          <img src="img/icons/premium.png" alt="">
+          <h3>The complete package.</h3>
+        </section>
+      </main>
+
+      <!-- Footer content -->
+      <footer>
+        <!-- Contact -->
+        <section id="footer-contact">
+          <h2>Contact Us</h2>
+          <p>Want to get in touch with us? Send us an email, contact our support or 
+          talk to us on social media.</p>
+
+          <div class="contact-type">
+            <h3>Email Us</h3>
+            <img src="img/icons/email-2.png" alt="">
+            <p>Email any queries or suggestions to:</p>
+            <p class="contact-detail">info@sportomatic.co.za</p>
+          </div>
+
+          <div class="contact-type">
+            <h3>Call Us</h3>
+            <img src="img/icons/call.png" alt="">
+            <p>Speak to us at:</p>
+            <p class="contact-detail">011-021-0202</p>
+          </div>
+
+          <div class="contact-type">
+            <h3>Support</h3>
+            <img src="img/icons/support.png" alt="">
+            <p>Email:</p>
+            <p class="contact-detail">support@sportomatic.co.za</p>
+            <p>Call:</p>
+            <p class="contact-detail">011-021-0202</p>
+          </div>
+        </section>
+
+        <!-- Social media -->
+        <section id="footer-social">
+          <h3>Follow Us</h3>
+          <ul id="social-media-btns">
+            <li><a href="" title="Like us on Facebook!">
+                <img src="img/icons/big-facebook.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Twitter!">
+                <img src="img/icons/big-twitter.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Pinterest!">
+                <img src="img/icons/big-pinterest.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Instagram!">
+                <img src="img/icons/big-instagram.png" alt=""></a></li>
+            <li><a href="" title="View our LinkIn company profile!">
+                <img src="img/icons/big-linkedin.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Google+!">
+                <img src="img/icons/big-google-plus.png" alt=""></a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap -->
+        <nav id="sitemap">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html#vision">Vision</a></li>
+            <li><a href="about.html#values">Values</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+          <h3>Features</h3>
+          <ul>
+            <li><a href="features.html#scheduling">Scheduling</a></li>
+            <li><a href="about.html#hour-logging">Hour logging</a></li>
+            <li><a href="about.html#user-accounts">User accounts</a></li>
+            <li><a href="about.html#notifications">Notifications</a></li>
+            <li><a href="about.html#reports">Reports</a></li>
+            <li><a href="about.html#analytics">Analytics</a></li>
+            <li><a href="about.html#billing">Billing</a></li>
+          </ul>
+          <h3>Pricing</h3>
+          <ul>
+            <li><a href="pricing.html#basic">Basic</a></li>
+            <li><a href="pricing.html#plus">Plus</a></li>
+            <li><a href="pricing.html#premium">Premium</a></li>
+          </ul>
+          <h3>Blog</h3>
+          <ul>
+            <li><a href="blog/index.html">Home</a></li>
+          </ul>
+        </nav>
+
+        <!-- Legal -->
+        <section id="footer-legal">
+          <h3 class="hidden">Legal information</h3>
+          <p>© Copyright 2016 Sportomatic. All Rights Reserved.</p> 
+          <p>Media designed by Freepik and distributed by Flaticon.</p> 
+        </section>
+      </footer>
+    </div>
   </body>
 </html>

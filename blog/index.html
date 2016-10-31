@@ -7,245 +7,255 @@
     <meta name="keywords" content="Sports, Management, Blog, Technology,
     Sport tech, Sportomatic, South Africa, SA">
     <meta name="author" content="Zaid Frazao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog | Sportomatic</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/default.css" media="screen">
   </head>
 
   <body>
-    <!-- Main site navigation bar -->
-    <nav class="main-nav">
-      <h1 class="hidden">Sportomatic Blog</h1>
-      <a href="#"><img src="img/logo.png" alt=""></a>
-      <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#blog">Blog</a></li>
-      </ul>
-      <form id="site-search">
-        Search:<input type="search" name="search"><br>
-        <input type="submit" value="Search">
-      </form>
-      <a id="login-btn" href="login.html">Login</a>
-    </nav>
-
-    <!-- "Above the fold" banner content -->
-    <header>
-      <p>The sports management suite that takes your institution to the next
-      level.</p>
-      <p>Oversee your managers and coaches from one convenient location. 
-      We'll handle the admin so you can focus on the trophies.</p>
-      <img src="img/home-banner.jpg" alt="The Sportomatic app displayed on an 
-      iPhone, Android tablet and Desktop computer monitor.">
-
-      <div id="banner-btns">
-        <a id="ios-download" href="" title="Download Sportomatic from the App Store.">iOS Download</a>
-        <a id="android-download" href="" title="Download Sportomatic from the Google Play Store.">Android Download</a>
-        <a id="learn-more" href="#features">Learn more</a>
-      </div>
-    </header>
-
-    <!-- Main content -->
-    <main>
-      <!-- About section -->
-      <section id="about">
-        <h2>The future of sports management.</h2>
-        <p>Sportomatic isn't just an app. It's a revolution in sports management. 
-        The devices we carry around with us are capable of so much. It's time to start using
-        those capabilities to streamline how we manage our sports.</p>
-        <a href="about.html">Find out more about us</a>
-      </section>
-
-      <!-- Features section -->
-      <section id="features">
-        <h2>Packed with tons of features.</h2>
-        <p>Sportomatic has the tools to make administrating sport a whole
-        lot easier. You'll wonder how you've been doing things without them for so long.</p>
-        <a href="features.html">Learn more</a>
-
-        <!-- Scheduling -->
-        <section id="scheduling" class="left-feature">
-          <img src="img/icons/scheduling.png" alt="">
-          <h3>Scheduling</h3>
-          <p>Set schedules for the season so that your managers and coaches know where
-          they need to be and when they need to be there.</p>
-          <a href="features.html#scheduling">Learn more</a>
-        </section>
-
-        <!-- Hour logging -->
-        <section id="hour-logging" class="right-feature">
-          <img src="img/icons/hour-logging.png" alt="">
-          <h3>Hour Logging</h3>
-          <p>Still using pen and paper to figure out how much you owe your
-          coaches at the end of the month? Not any more. Sportomatic tracks hours
-          to make sure everyone gets paid what they deserve.</p>
-          <a href="features.html#hour-logging">Learn more</a>
-        </section>
-
-        <!-- User Accounts -->
-        <section id="user-accounts" class="left-feature">
-          <img src="img/icons/user-accounts.png" alt="">
-          <h3>User Accounts</h3>
-          <p>All of your managers and coaches get their own free accounts.
-          Everyone will have secure access to the most important info whenever
-          they need it.</p>
-          <a href="features.html#user-accounts">Learn more</a>
-        </section>
-
-        <!-- Notifications -->
-        <!-- TODO: Add the right word for [payment invoices] -->
-        <section id="notifications" class="right-feature">
-          <img src="img/icons/notifications.png" alt="">
-          <h3>Notifications</h3>
-          <p>Sportomatic is smart enough to automatically know when your staff 
-          need to be reminded of practice or you need to be reminded to send
-          your coaches their [payment invoices].</p>
-          <a href="features.html#notifications">Learn more</a>
-        </section>
-
-        <!-- Reports -->
-        <section id="reports" class="left-feature">
-          <img src="img/icons/reports.png" alt="">
-          <h3>Reports</h3>
-          <p>You'll receive regular reports of hours logged so that you
-          always know how much money you're payng everyone (and who's been
-          missing practices).</p>
-          <a href="features.html#reports">Learn more</a>
-        </section>
-
-        <!-- Analytics -->
-        <section id="analytics" class="right-feature">
-          <img src="img/icons/analytics.png" alt="">
-          <h3>Analytics</h3>
-          <p>It's important to monitor trends to know where you can optimise
-          and how best to do it. Sportomatic makes that easy.</p>
-          <a href="features.html#analytics">Learn more</a>
-        </section>
-
-
-        <!-- Billing -->
-        <section id="billing" class="left-feature">
-          <img src="img/icons/billing.png" alt="">
-          <h3>Billing</h3>
-          <p>Sportomatic automatically generates bills for coaching salaries, 
-          automatically sends those bills to the relevant people, and 
-          automatically stores secure copies of them on the cloud.</p>
-          <a href="features.html#billing">Learn more</a>
-        </section>
-
-        <!-- More to come -->
-        <section id="future" class="right-feature">
-          <img src="img/icons/future.png" alt="">
-          <h3>More to come...</h3>
-          <p>We want Sportomatic to be the app that handles all of your sports
-          management needs, so this isn't the end. The future will bring many
-          more exciting features that will completely change how you manage your
-          sports!</p>
-          <a href="features.html#future">Learn more</a>
-        </section>
-      </section>
-
-      <!-- Pricing section -->
-      <!-- TODO: Add short summary of price structre and link to pricing page -->
-
-      <!-- Blog -->
-      <section id="blog">
-        <h2>Stay informed.</h2>
-        <p>Our blog will keep you updated with the latest in sports management,
-        technology in sports, and the South African sports scene.</p>
-        <a href="blog/index.html">Visit our blog</a>
-      </section>
-    </main>
-
-    
-    <!-- Footer content -->
-    <footer>
-      <!-- Contact -->
-      <section id="footer-contact">
-        <h2>Contact Us</h2>
-        <p>Want to get in touch with us? Send us an email, contact our support or 
-        talk to us on social media.</p>
-
-        <div class="contact-type">
-          <h3>Email Us</h3>
-          <img src="img/icons/email-2.png" alt="">
-          <p>Email any queries or suggestions to:</p>
-          <p class="contact-detail">info@sportomatic.co.za</p>
-        </div>
-
-        <div class="contact-type">
-          <h3>Call Us</h3>
-          <img src="img/icons/call.png" alt="">
-          <p>Speak to us at:</p>
-          <p class="contact-detail">011-021-0202</p>
-        </div>
-
-        <div class="contact-type">
-          <h3>Support</h3>
-          <img src="img/icons/support.png" alt="">
-          <p>Email:</p>
-          <p class="contact-detail">support@sportomatic.co.za</p>
-          <p>Call:</p>
-          <p class="contact-detail">011-021-0202</p>
-        </div>
-      </section>
-
-      <!-- Social media -->
-      <section id="footer-social">
-        <h3>Follow Us</h3>
-        <ul id="social-media-btns">
-          <li><a href="" title="Like us on Facebook!">
-              <img src="img/icons/big-facebook.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Twitter!">
-              <img src="img/icons/big-twitter.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Pinterest!">
-              <img src="img/icons/big-pinterest.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Instagram!">
-              <img src="img/icons/big-instagram.png" alt=""></a></li>
-          <li><a href="" title="View our LinkIn company profile!">
-              <img src="img/icons/big-linkedin.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Google+!">
-              <img src="img/icons/big-google-plus.png" alt=""></a></li>
-        </ul>
-      </section>
-
-      <!-- Sitemap -->
-      <nav id="sitemap">
-        <h3>About</h3>
+    <div class="container">
+      <!-- Main site navigation bar -->
+      <nav class="main-nav">
+        <h1 class="hidden">Sportomatic Blog</h1>
+        <a href="#"><img src="img/logo.png" alt=""></a>
         <ul>
-          <li><a href="about.html#vision">Vision</a></li>
-          <li><a href="about.html#values">Values</a></li>
-          <li><a href="about.html#team">Team</a></li>
-          <li><a href="about.html#contact">Contact</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#blog">Blog</a></li>
         </ul>
-        <h3>Features</h3>
-        <ul>
-          <li><a href="features.html#scheduling">Scheduling</a></li>
-          <li><a href="about.html#hour-logging">Hour logging</a></li>
-          <li><a href="about.html#user-accounts">User accounts</a></li>
-          <li><a href="about.html#notifications">Notifications</a></li>
-          <li><a href="about.html#reports">Reports</a></li>
-          <li><a href="about.html#analytics">Analytics</a></li>
-          <li><a href="about.html#billing">Billing</a></li>
-        </ul>
-        <h3>Pricing</h3>
-        <ul>
-          <li><a href="pricing.html#basic">Basic</a></li>
-          <li><a href="pricing.html#plus">Plus</a></li>
-          <li><a href="pricing.html#premium">Premium</a></li>
-        </ul>
-        <h3>Blog</h3>
-        <ul>
-          <li><a href="blog/index.html">Home</a></li>
-        </ul>
+        <form id="site-search">
+          Search:<input type="search" name="search"><br>
+          <input type="submit" value="Search">
+        </form>
+        <a id="login-btn" href="login.html">Login</a>
       </nav>
 
-      <!-- Legal -->
-      <secion id="footer-legal">
-        <p>© Copyright 2016 Sportomatic. All Rights Reserved.</p> 
-        <p>Media designed by Freepik and distributed by Flaticon.</p> 
-      </section>
-    </footer>
+      <!-- "Above the fold" banner content -->
+      <header>
+        <p>The sports management suite that takes your institution to the next
+        level.</p>
+        <p>Oversee your managers and coaches from one convenient location. 
+        We'll handle the admin so you can focus on the trophies.</p>
+        <img src="img/home-banner.jpg" alt="The Sportomatic app displayed on an 
+        iPhone, Android tablet and Desktop computer monitor.">
+
+        <div id="banner-btns">
+          <a id="ios-download" href="" title="Download Sportomatic from the App Store.">iOS Download</a>
+          <a id="android-download" href="" title="Download Sportomatic from the Google Play Store.">Android Download</a>
+          <a id="learn-more" href="#features">Learn more</a>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main>
+        <!-- About section -->
+        <section id="about">
+          <h2>The future of sports management.</h2>
+          <p>Sportomatic isn't just an app. It's a revolution in sports management. 
+          The devices we carry around with us are capable of so much. It's time to start using
+          those capabilities to streamline how we manage our sports.</p>
+          <a href="about.html">Find out more about us</a>
+        </section>
+
+        <!-- Features section -->
+        <section id="features">
+          <h2>Packed with tons of features.</h2>
+          <p>Sportomatic has the tools to make administrating sport a whole
+          lot easier. You'll wonder how you've been doing things without them for so long.</p>
+          <a href="features.html">Learn more</a>
+
+          <!-- Scheduling -->
+          <section id="scheduling" class="left-feature">
+            <img src="img/icons/scheduling.png" alt="">
+            <h3>Scheduling</h3>
+            <p>Set schedules for the season so that your managers and coaches know where
+            they need to be and when they need to be there.</p>
+            <a href="features.html#scheduling">Learn more</a>
+          </section>
+
+          <!-- Hour logging -->
+          <section id="hour-logging" class="right-feature">
+            <img src="img/icons/hour-logging.png" alt="">
+            <h3>Hour Logging</h3>
+            <p>Still using pen and paper to figure out how much you owe your
+            coaches at the end of the month? Not any more. Sportomatic tracks hours
+            to make sure everyone gets paid what they deserve.</p>
+            <a href="features.html#hour-logging">Learn more</a>
+          </section>
+
+          <!-- User Accounts -->
+          <section id="user-accounts" class="left-feature">
+            <img src="img/icons/user-accounts.png" alt="">
+            <h3>User Accounts</h3>
+            <p>All of your managers and coaches get their own free accounts.
+            Everyone will have secure access to the most important info whenever
+            they need it.</p>
+            <a href="features.html#user-accounts">Learn more</a>
+          </section>
+
+          <!-- Notifications -->
+          <!-- TODO: Add the right word for [payment invoices] -->
+          <section id="notifications" class="right-feature">
+            <img src="img/icons/notifications.png" alt="">
+            <h3>Notifications</h3>
+            <p>Sportomatic is smart enough to automatically know when your staff 
+            need to be reminded of practice or you need to be reminded to send
+            your coaches their [payment invoices].</p>
+            <a href="features.html#notifications">Learn more</a>
+          </section>
+
+          <!-- Reports -->
+          <section id="reports" class="left-feature">
+            <img src="img/icons/reports.png" alt="">
+            <h3>Reports</h3>
+            <p>You'll receive regular reports of hours logged so that you
+            always know how much money you're payng everyone (and who's been
+            missing practices).</p>
+            <a href="features.html#reports">Learn more</a>
+          </section>
+
+          <!-- Analytics -->
+          <section id="analytics" class="right-feature">
+            <img src="img/icons/analytics.png" alt="">
+            <h3>Analytics</h3>
+            <p>It's important to monitor trends to know where you can optimise
+            and how best to do it. Sportomatic makes that easy.</p>
+            <a href="features.html#analytics">Learn more</a>
+          </section>
+
+
+          <!-- Billing -->
+          <section id="billing" class="left-feature">
+            <img src="img/icons/billing.png" alt="">
+            <h3>Billing</h3>
+            <p>Sportomatic automatically generates bills for coaching salaries, 
+            automatically sends those bills to the relevant people, and 
+            automatically stores secure copies of them on the cloud.</p>
+            <a href="features.html#billing">Learn more</a>
+          </section>
+
+          <!-- More to come -->
+          <section id="future" class="right-feature">
+            <img src="img/icons/future.png" alt="">
+            <h3>More to come...</h3>
+            <p>We want Sportomatic to be the app that handles all of your sports
+            management needs, so this isn't the end. The future will bring many
+            more exciting features that will completely change how you manage your
+            sports!</p>
+            <a href="features.html#future">Learn more</a>
+          </section>
+        </section>
+
+        <!-- Pricing section -->
+        <!-- TODO: Add short summary of price structre and link to pricing page -->
+
+        <!-- Blog -->
+        <section id="blog">
+          <h2>Stay informed.</h2>
+          <p>Our blog will keep you updated with the latest in sports management,
+          technology in sports, and the South African sports scene.</p>
+          <a href="blog/index.html">Visit our blog</a>
+        </section>
+      </main>
+
+      
+      <!-- Footer content -->
+      <footer>
+        <!-- Contact -->
+        <section id="footer-contact">
+          <h2>Contact Us</h2>
+          <p>Want to get in touch with us? Send us an email, contact our support or 
+          talk to us on social media.</p>
+
+          <div class="contact-type">
+            <h3>Email Us</h3>
+            <img src="img/icons/email-2.png" alt="">
+            <p>Email any queries or suggestions to:</p>
+            <p class="contact-detail">info@sportomatic.co.za</p>
+          </div>
+
+          <div class="contact-type">
+            <h3>Call Us</h3>
+            <img src="img/icons/call.png" alt="">
+            <p>Speak to us at:</p>
+            <p class="contact-detail">011-021-0202</p>
+          </div>
+
+          <div class="contact-type">
+            <h3>Support</h3>
+            <img src="img/icons/support.png" alt="">
+            <p>Email:</p>
+            <p class="contact-detail">support@sportomatic.co.za</p>
+            <p>Call:</p>
+            <p class="contact-detail">011-021-0202</p>
+          </div>
+        </section>
+
+        <!-- Social media -->
+        <section id="footer-social">
+          <h3>Follow Us</h3>
+          <ul id="social-media-btns">
+            <li><a href="" title="Like us on Facebook!">
+                <img src="img/icons/big-facebook.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Twitter!">
+                <img src="img/icons/big-twitter.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Pinterest!">
+                <img src="img/icons/big-pinterest.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Instagram!">
+                <img src="img/icons/big-instagram.png" alt=""></a></li>
+            <li><a href="" title="View our LinkIn company profile!">
+                <img src="img/icons/big-linkedin.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Google+!">
+                <img src="img/icons/big-google-plus.png" alt=""></a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap -->
+        <nav id="sitemap">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html#vision">Vision</a></li>
+            <li><a href="about.html#values">Values</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+          <h3>Features</h3>
+          <ul>
+            <li><a href="features.html#scheduling">Scheduling</a></li>
+            <li><a href="about.html#hour-logging">Hour logging</a></li>
+            <li><a href="about.html#user-accounts">User accounts</a></li>
+            <li><a href="about.html#notifications">Notifications</a></li>
+            <li><a href="about.html#reports">Reports</a></li>
+            <li><a href="about.html#analytics">Analytics</a></li>
+            <li><a href="about.html#billing">Billing</a></li>
+          </ul>
+          <h3>Pricing</h3>
+          <ul>
+            <li><a href="pricing.html#basic">Basic</a></li>
+            <li><a href="pricing.html#plus">Plus</a></li>
+            <li><a href="pricing.html#premium">Premium</a></li>
+          </ul>
+          <h3>Blog</h3>
+          <ul>
+            <li><a href="blog/index.html">Home</a></li>
+          </ul>
+        </nav>
+
+        <!-- Legal -->
+        <secion id="footer-legal">
+          <p>© Copyright 2016 Sportomatic. All Rights Reserved.</p> 
+          <p>Media designed by Freepik and distributed by Flaticon.</p> 
+        </section>
+      </footer>
+    </div>
   </body>
 </html>

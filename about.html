@@ -6,250 +6,260 @@
     <meta name="keywords" content="Sports, Management, Software, Values, Vision, 
     Contact, Team, Cofounders, Company, Sportomatic">
     <meta name="author" content="Richard Athey">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About | Sportomatic</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/default.css" media="screen">
   </head>
 
   <body>
-    <!-- Main site navigation bar -->
-    <nav class="main-nav">
-      <h1 class="hidden">Sportomatic</h1>
-      <a href="#"><img src="img/logo.png" alt=""></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-      </ul>
-      <form id="site-search">
-        Search:<input type="search" name="search"><br>
-        <input type="submit" value="Search">
-      </form>
-      <a id="login-btn" href="login.html">Login</a>
-    </nav>
-	
-    <!-- Header content -->
-    <header>
-      <h1>Get to know Sportomatic.</h1>
-      <p>We're a young, proudly South African tech startup with big dreams and the drive 
-      to make those dreams a reality.</p>
-    </header>
-	
-    <!-- Main content -->
-    <main>
-      <!-- Vision -->
-      <!-- TODO: Add vision -->
-      <section id="vision">
-        <h2>Vision</h2>
-      </section>
-
-      <!-- Goals -->
-      <!-- TODO: Add goals -->
-      <section id="values">
-        <h2>Values</h2>
-      </section>	 
-
-      <!-- Team -->
-      <section id="team">
-        <h2>Team</h2>
-        <!-- Brett's profile -->
-        <div class="cofounder-profile">
-          <h3>Brett Cooke</h3>
-          <img src="img/profile/brett.jpg" alt="Brett Cook, CEO"
-            title="Brett Cook, CEO" width="256">
-          <h4>CEO</h4>
-          <p>Has his Honours in Commerce majoring in Sports Management, so he
-          understands sports management from the ground up.</p>
-          <ul class="profile-btns">
-            <li><a href="" title="View Brett's LinkedIn profile.">
-                <img src="img/icons/linkedin.png" alt=""></a></li>
-            <li><a href="" title="View Brett's Twitter profile.">
-                <img src="img/icons/twitter.png" alt=""></a></li>
-            <li><a href="mailto:brett@sportomatic.co.za" title="Send Brett an email." target="_blank">
-                <img src="img/icons/email.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- Zaid's profile -->
-        <div class="cofounder-profile">
-          <h3>Zaid Frazao</h3>
-          <img src="img/profile/zaid.jpg" 
-            alt="Zaid Frazao, Head of Product Design & Development"
-            title="Zaid Frazao, Head of Product Design & Development" width="256">
-          <h4>Product Design & Development</h4>
-          <p>Long-time programmer with an understanding of how to make
-          software that people enjoy using.</p>
-          <ul class="profile-btns">
-            <li><a href="" title="View Zaid's LinkedIn profile.">
-                <img src="img/icons/linkedin.png" alt=""></a></li>
-            <li><a href="" title="View Zaid's Twitter profile.">
-                <img src="img/icons/twitter.png" alt=""></a></li>
-            <li><a href="mailto:zaid@sportomatic.co.za" title="Send Zaid an email." target="_blank">
-                <img src="img/icons/email.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- Rowan's profile -->
-        <div class="cofounder-profile">
-          <h3>Rowan Walker-Campbell</h3>
-          <img src="img/profile/rowan.jpg" 
-            alt="Rowan Walker-Campbell, Head of Marketing"
-            title="Rowan Walker-Campbell, Head of Marketing" width="256">
-          <h4>Marketing</h4>
-          <p>Worked as a coach for high-profile sporting institutions,
-          meaning he understands the market's needs.</p>
-          <ul class="profile-btns">
-            <li><a href="" title="View Rowan's LinkedIn profile.">
-                <img src="img/icons/linkedin.png" alt=""></a></li>
-            <li><a href="" title="View Rowan's Twitter profile.">
-                <img src="img/icons/twitter.png" alt=""></a></li>
-            <li><a href="mailto:rowan@sportomatic.co.za" title="Send Rowan an email." target="_blank">
-                <img src="img/icons/email.png" alt=""></a></li>
-          </ul>
-        </div>
-        <!-- Richard's profile -->
-        <!-- TODO(richard): fill in title and description -->
-        <div class="cofounder-profile">
-          <h3>Richard Athey</h3>
-          <img src="img/profile/richard.jpg" 
-            alt="Richard Athey, Head of [Fill in]"
-            title="Richard Athey, Head of [Fill in]" width="256">
-          <h4>[Fill in]</h4>
-          <p>[Fill in]</p>
-          <ul class="profile-btns">
-            <li><a href="" title="View Richard's LinkedIn profile.">
-                <img src="img/icons/linkedin.png" alt=""></a></li>
-            <li><a href="" title="View Richard's Twitter profile.">
-                <img src="img/icons/twitter.png" alt=""></a></li>
-            <li><a href="mailto:richard@sportomatic.co.za" title="Send Richard an email." target="_blank">
-                <img src="img/icons/email.png" alt=""></a></li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <!-- Contact form -->
-        <p>We'd love to hear from you so send us a message!</p>
-        <form id="contact-form"><br>
-          Name:<input type="text"><br>
-          Email:<input type="email"><br>
-          Subject:<input type="text"><br>
-          Message:<br><textarea name="message" rows="10" cols="80">Your message...</textarea><br>
-          <input type="submit" value="Send">
+    <div class="container">
+      <!-- Main site navigation bar -->
+      <nav class="main-nav">
+        <h1 class="hidden">Sportomatic</h1>
+        <a href="#"><img src="img/logo.png" alt=""></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+        </ul>
+        <form id="site-search">
+          Search:<input type="search" name="search"><br>
+          <input type="submit" value="Search">
         </form>
-
-        <div class="contact-type">
-          <h3>Email Us</h3>
-          <img src="img/icons/email-2.png" alt="">
-          <p>Email any queries or suggestions to:</p>
-          <p class="contact-detail">info@sportomatic.co.za</p>
-        </div>
-        <div class="contact-type">
-          <h3>Call Us</h3>
-          <img src="img/icons/call.png" alt="">
-          <p>Speak to us at:</p>
-          <p class="contact-detail">011-021-0202</p>
-        </div>
-        <div class="contact-type">
-          <h3>Support</h3>
-          <img src="img/icons/support.png" alt="">
-          <p>Email:</p>
-          <p class="contact-detail">support@sportomatic.co.za</p>
-          <p>Call:</p>
-          <p class="contact-detail">011-021-0202</p>
-        </div>
-      </section>	 
-    </main>
-	
-    <!-- Footer content -->
-    <footer>
-      <!-- Contact -->
-      <section id="footer-contact">
-        <h2>Contact Us</h2>
-        <p>Want to get in touch with us? Send us an email, contact our support or 
-        talk to us on social media.</p>
-
-        <div class="contact-type">
-          <h3>Email Us</h3>
-          <img src="img/icons/email-2.png" alt="">
-          <p>Email any queries or suggestions to:</p>
-          <p class="contact-detail">info@sportomatic.co.za</p>
-        </div>
-
-        <div class="contact-type">
-          <h3>Call Us</h3>
-          <img src="img/icons/call.png" alt="">
-          <p>Speak to us at:</p>
-          <p class="contact-detail">011-021-0202</p>
-        </div>
-
-        <div class="contact-type">
-          <h3>Support</h3>
-          <img src="img/icons/support.png" alt="">
-          <p>Email:</p>
-          <p class="contact-detail">support@sportomatic.co.za</p>
-          <p>Call:</p>
-          <p class="contact-detail">011-021-0202</p>
-        </div>
-      </section>
-
-      <!-- Social media -->
-      <section id="footer-social">
-        <h3>Follow Us</h3>
-        <ul id="social-media-btns">
-          <li><a href="" title="Like us on Facebook!">
-              <img src="img/icons/big-facebook.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Twitter!">
-              <img src="img/icons/big-twitter.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Pinterest!">
-              <img src="img/icons/big-pinterest.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Instagram!">
-              <img src="img/icons/big-instagram.png" alt=""></a></li>
-          <li><a href="" title="View our LinkIn company profile!">
-              <img src="img/icons/big-linkedin.png" alt=""></a></li>
-          <li><a href="" title="Follow us on Google+!">
-              <img src="img/icons/big-google-plus.png" alt=""></a></li>
-        </ul>
-      </section>
-
-      <!-- Sitemap -->
-      <nav id="sitemap">
-        <h3>About</h3>
-        <ul>
-          <li><a href="about.html#vision">Vision</a></li>
-          <li><a href="about.html#values">Values</a></li>
-          <li><a href="about.html#team">Team</a></li>
-          <li><a href="about.html#contact">Contact</a></li>
-        </ul>
-        <h3>Features</h3>
-        <ul>
-          <li><a href="features.html#scheduling">Scheduling</a></li>
-          <li><a href="about.html#hour-logging">Hour logging</a></li>
-          <li><a href="about.html#user-accounts">User accounts</a></li>
-          <li><a href="about.html#notifications">Notifications</a></li>
-          <li><a href="about.html#reports">Reports</a></li>
-          <li><a href="about.html#analytics">Analytics</a></li>
-          <li><a href="about.html#billing">Billing</a></li>
-        </ul>
-        <h3>Pricing</h3>
-        <ul>
-          <li><a href="pricing.html#basic">Basic</a></li>
-          <li><a href="pricing.html#plus">Plus</a></li>
-          <li><a href="pricing.html#premium">Premium</a></li>
-        </ul>
-        <h3>Blog</h3>
-        <ul>
-          <li><a href="blog/index.html">Home</a></li>
-        </ul>
+        <a id="login-btn" href="login.html">Login</a>
       </nav>
+    
+      <!-- Header content -->
+      <header>
+        <h1>Get to know Sportomatic.</h1>
+        <p>We're a young, proudly South African tech startup with big dreams and the drive 
+        to make those dreams a reality.</p>
+      </header>
+    
+      <!-- Main content -->
+      <main>
+        <!-- Vision -->
+        <!-- TODO: Add vision -->
+        <section id="vision">
+          <h2>Vision</h2>
+        </section>
 
-      <!-- Legal -->
-      <section id="footer-legal">
-        <h3 class="hidden">Legal information</h3>
-        <p>© Copyright 2016 Sportomatic. All Rights Reserved.</p> 
-        <p>Media designed by Freepik and distributed by Flaticon.</p> 
-      </section>
-    </footer>
+        <!-- Goals -->
+        <!-- TODO: Add goals -->
+        <section id="values">
+          <h2>Values</h2>
+        </section>	 
+
+        <!-- Team -->
+        <section id="team">
+          <h2>Team</h2>
+          <!-- Brett's profile -->
+          <div class="cofounder-profile">
+            <h3>Brett Cooke</h3>
+            <img src="img/profile/brett.jpg" alt="Brett Cook, CEO"
+              title="Brett Cook, CEO" width="256">
+            <h4>CEO</h4>
+            <p>Has his Honours in Commerce majoring in Sports Management, so he
+            understands sports management from the ground up.</p>
+            <ul class="profile-btns">
+              <li><a href="" title="View Brett's LinkedIn profile.">
+                  <img src="img/icons/linkedin.png" alt=""></a></li>
+              <li><a href="" title="View Brett's Twitter profile.">
+                  <img src="img/icons/twitter.png" alt=""></a></li>
+              <li><a href="mailto:brett@sportomatic.co.za" title="Send Brett an email." target="_blank">
+                  <img src="img/icons/email.png" alt=""></a></li>
+            </ul>
+          </div>
+          <!-- Zaid's profile -->
+          <div class="cofounder-profile">
+            <h3>Zaid Frazao</h3>
+            <img src="img/profile/zaid.jpg" 
+              alt="Zaid Frazao, Head of Product Design & Development"
+              title="Zaid Frazao, Head of Product Design & Development" width="256">
+            <h4>Product Design & Development</h4>
+            <p>Long-time programmer with an understanding of how to make
+            software that people enjoy using.</p>
+            <ul class="profile-btns">
+              <li><a href="" title="View Zaid's LinkedIn profile.">
+                  <img src="img/icons/linkedin.png" alt=""></a></li>
+              <li><a href="" title="View Zaid's Twitter profile.">
+                  <img src="img/icons/twitter.png" alt=""></a></li>
+              <li><a href="mailto:zaid@sportomatic.co.za" title="Send Zaid an email." target="_blank">
+                  <img src="img/icons/email.png" alt=""></a></li>
+            </ul>
+          </div>
+          <!-- Rowan's profile -->
+          <div class="cofounder-profile">
+            <h3>Rowan Walker-Campbell</h3>
+            <img src="img/profile/rowan.jpg" 
+              alt="Rowan Walker-Campbell, Head of Marketing"
+              title="Rowan Walker-Campbell, Head of Marketing" width="256">
+            <h4>Marketing</h4>
+            <p>Worked as a coach for high-profile sporting institutions,
+            meaning he understands the market's needs.</p>
+            <ul class="profile-btns">
+              <li><a href="" title="View Rowan's LinkedIn profile.">
+                  <img src="img/icons/linkedin.png" alt=""></a></li>
+              <li><a href="" title="View Rowan's Twitter profile.">
+                  <img src="img/icons/twitter.png" alt=""></a></li>
+              <li><a href="mailto:rowan@sportomatic.co.za" title="Send Rowan an email." target="_blank">
+                  <img src="img/icons/email.png" alt=""></a></li>
+            </ul>
+          </div>
+          <!-- Richard's profile -->
+          <!-- TODO(richard): fill in title and description -->
+          <div class="cofounder-profile">
+            <h3>Richard Athey</h3>
+            <img src="img/profile/richard.jpg" 
+              alt="Richard Athey, Head of [Fill in]"
+              title="Richard Athey, Head of [Fill in]" width="256">
+            <h4>[Fill in]</h4>
+            <p>[Fill in]</p>
+            <ul class="profile-btns">
+              <li><a href="" title="View Richard's LinkedIn profile.">
+                  <img src="img/icons/linkedin.png" alt=""></a></li>
+              <li><a href="" title="View Richard's Twitter profile.">
+                  <img src="img/icons/twitter.png" alt=""></a></li>
+              <li><a href="mailto:richard@sportomatic.co.za" title="Send Richard an email." target="_blank">
+                  <img src="img/icons/email.png" alt=""></a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+          <h2>Contact</h2>
+          <!-- Contact form -->
+          <p>We'd love to hear from you so send us a message!</p>
+          <form id="contact-form"><br>
+            Name:<input type="text"><br>
+            Email:<input type="email"><br>
+            Subject:<input type="text"><br>
+            Message:<br><textarea name="message" rows="10" cols="80">Your message...</textarea><br>
+            <input type="submit" value="Send">
+          </form>
+
+          <div class="contact-type">
+            <h3>Email Us</h3>
+            <img src="img/icons/email-2.png" alt="">
+            <p>Email any queries or suggestions to:</p>
+            <p class="contact-detail">info@sportomatic.co.za</p>
+          </div>
+          <div class="contact-type">
+            <h3>Call Us</h3>
+            <img src="img/icons/call.png" alt="">
+            <p>Speak to us at:</p>
+            <p class="contact-detail">011-021-0202</p>
+          </div>
+          <div class="contact-type">
+            <h3>Support</h3>
+            <img src="img/icons/support.png" alt="">
+            <p>Email:</p>
+            <p class="contact-detail">support@sportomatic.co.za</p>
+            <p>Call:</p>
+            <p class="contact-detail">011-021-0202</p>
+          </div>
+        </section>	 
+      </main>
+    
+      <!-- Footer content -->
+      <footer>
+        <!-- Contact -->
+        <section id="footer-contact">
+          <h2>Contact Us</h2>
+          <p>Want to get in touch with us? Send us an email, contact our support or 
+          talk to us on social media.</p>
+
+          <div class="contact-type">
+            <h3>Email Us</h3>
+            <img src="img/icons/email-2.png" alt="">
+            <p>Email any queries or suggestions to:</p>
+            <p class="contact-detail">info@sportomatic.co.za</p>
+          </div>
+
+          <div class="contact-type">
+            <h3>Call Us</h3>
+            <img src="img/icons/call.png" alt="">
+            <p>Speak to us at:</p>
+            <p class="contact-detail">011-021-0202</p>
+          </div>
+
+          <div class="contact-type">
+            <h3>Support</h3>
+            <img src="img/icons/support.png" alt="">
+            <p>Email:</p>
+            <p class="contact-detail">support@sportomatic.co.za</p>
+            <p>Call:</p>
+            <p class="contact-detail">011-021-0202</p>
+          </div>
+        </section>
+
+        <!-- Social media -->
+        <section id="footer-social">
+          <h3>Follow Us</h3>
+          <ul id="social-media-btns">
+            <li><a href="" title="Like us on Facebook!">
+                <img src="img/icons/big-facebook.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Twitter!">
+                <img src="img/icons/big-twitter.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Pinterest!">
+                <img src="img/icons/big-pinterest.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Instagram!">
+                <img src="img/icons/big-instagram.png" alt=""></a></li>
+            <li><a href="" title="View our LinkIn company profile!">
+                <img src="img/icons/big-linkedin.png" alt=""></a></li>
+            <li><a href="" title="Follow us on Google+!">
+                <img src="img/icons/big-google-plus.png" alt=""></a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap -->
+        <nav id="sitemap">
+          <h3>About</h3>
+          <ul>
+            <li><a href="about.html#vision">Vision</a></li>
+            <li><a href="about.html#values">Values</a></li>
+            <li><a href="about.html#team">Team</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
+          </ul>
+          <h3>Features</h3>
+          <ul>
+            <li><a href="features.html#scheduling">Scheduling</a></li>
+            <li><a href="about.html#hour-logging">Hour logging</a></li>
+            <li><a href="about.html#user-accounts">User accounts</a></li>
+            <li><a href="about.html#notifications">Notifications</a></li>
+            <li><a href="about.html#reports">Reports</a></li>
+            <li><a href="about.html#analytics">Analytics</a></li>
+            <li><a href="about.html#billing">Billing</a></li>
+          </ul>
+          <h3>Pricing</h3>
+          <ul>
+            <li><a href="pricing.html#basic">Basic</a></li>
+            <li><a href="pricing.html#plus">Plus</a></li>
+            <li><a href="pricing.html#premium">Premium</a></li>
+          </ul>
+          <h3>Blog</h3>
+          <ul>
+            <li><a href="blog/index.html">Home</a></li>
+          </ul>
+        </nav>
+
+        <!-- Legal -->
+        <section id="footer-legal">
+          <h3 class="hidden">Legal information</h3>
+          <p>© Copyright 2016 Sportomatic. All Rights Reserved.</p> 
+          <p>Media designed by Freepik and distributed by Flaticon.</p> 
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
