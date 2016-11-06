@@ -1,0 +1,28 @@
+.home-banner {
+  height: 90vh;
+  padding: 10rem;
+  background-image: url("../img/banner-bg.jpg");
+  margin-bottom: 1px;
+}
+
+.banner-btn {
+  margin-bottom: 1rem;
+}
+
+.feature {
+  margin: 14rem 0;
+}
+
+#home-about {
+  height: 30rem;
+  padding: 5rem;
+}
+
+#home-features {
+  padding: 5rem;
+}
+
+#home-blog {
+  height: 30rem;
+  padding: 5rem;
+}

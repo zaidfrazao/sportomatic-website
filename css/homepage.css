@@ -1,0 +1,105 @@
+.home-banner {
+  height: 95vh;
+  /*padding: 1rem;*/
+  background-image: url("../img/banner-bg.jpg");
+  min-height: 50rem;
+  text-align: center;
+}
+
+#home-about h2 {
+    font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 601px) {
+  .home-banner {
+    padding: 4rem;
+    text-align: center;
+  }
+  
+  #home-about h2 {
+    font-size: 3.56rem;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 80%;
+  }
+  .home-banner {
+    padding: 10rem;
+    text-align: right;
+  }
+  
+  #home-about h2 {
+    font-size: 3.56rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.home-banner p:first-child {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: bold;  
+  margin-bottom: 1rem;
+}
+
+.home-banner p:last-child {
+  font-size: 1.2rem;
+  font-weight: normal;  
+  margin-bottom: 4rem;
+}
+
+.banner-btn {
+  margin: 0.4rem 0.4rem;
+  width: 18rem;
+}
+
+.banner-btn-icon {
+  font-size: 2rem;
+  padding-right: 0.8rem;
+  position: relative;
+  top: 0.2rem;
+}
+
+.feature {
+  margin: 4rem 0;
+  padding: 0 1.2rem;
+}
+
+.feature h3 {
+  font-size: 1.6rem;
+}
+
+.feature img {
+  height: 10rem;
+  width: auto;
+}
+
+.feature p {
+  min-height: 7.5rem;
+}
+
+#home-about {
+  padding: 8rem 5rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#home-features {
+  padding: 5rem;
+}
+
+#home-blog {
+  padding: 8rem 5rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#home-blog p {
+  padding: 2rem 0;
+}

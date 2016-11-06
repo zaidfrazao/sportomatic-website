@@ -1,76 +1,112 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-body {
-  font-family: 'Montserrat', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  color: #03a9f4;
 }
 
 p {
-  font-family: 'Neuton', serif;
+  font-size: 1.125rem;
+  line-height: 1.618;
 }
 
-.jumbotron {
-  padding: 0px;
+.signup-btn {
+  margin: 0.4rem;
 }
 
-.main-nav {
+/* Links */
+a {
+  color: #ff3d00;  
+}
+
+li.active {
+  background-color: #03a9f4 !important;
+  color: #ffffff !important;
+}
+
+.btn:hover.light-blue, .btn-large:hover.light-blue {
+  background-color: #4fc3f7 !important;
+}
+
+.btn:hover.orange, .btn-large:hover.orange {
+  background-color: #ffb74d !important;
+}
+
+/* Main navigation bar */
+.brand-logo img {
+  height: 4rem;
+  width: 22rem;
+  -webkit-transition: filter 0.3s; /* Safari */
+   transition: filter 0.3s;
+}
+
+.brand-logo img:hover {
+  -webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+  filter: brightness(80%);
+  -webkit-transition: filter 0.3s; /* Safari */
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
+.tabs li a {
+  color: #ffffff !important;
+}
+
+.tabs .indicator {
   background-color: #ffffff;
-  height: 70px;
-  padding-top: 10px;
 }
 
-.home-banner {
-  background-image: url("../img/banner-bg.jpg");
-  height: 100vh;
-}
-
-.home-banner-info {
-  padding-top: 20%;
-  color: #ffffff;
+/* Header */
+header {
+  height: 50vh;
+  padding: 4rem;
   text-align: center;
+  background-color: #03a9f4;
+  color: #ffffff;
 }
 
-.home-banner-info>h2 {
-  font-size: 2.5em;
+header h1 {
+  color: #ffffff;
 }
 
-.home-banner-info>p {
-  font-size: 1.2em;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: auto;
-  width: 60%;
+/* Footer */
+.contact-icon {
+  margin: 10px 0;
+  color: #ffffff;
+  font-size: 3rem;
+  display: block;
 }
 
-#home-about {
-  height: 400px;
-  padding: 100px 40px;
+section, footer {
+  margin: 0;
 }
 
-#home-blog {
-  height: 400px;
-  padding: 100px 40px;
+.page-footer {
+  margin: 0 !important;
 }
 
-.feature {
-  margin: 100px 0px;
+.footer-section {
+  margin: 2rem 0;
 }
 
-.social-media-btns {
-  list-style-type: none;
-  padding: 0px;
+.page-footer a:hover {
+  text-decoration: underline;
 }
 
-.social-media-btns li {
+.social-media-btns > li {
   display: inline;
-  margin: 5px;
 }
 
-.social-media-btns img {
-  height: 30px;
-  width: 30px;
+.social-icon {
+  font-size: 2rem;
+  padding: 1rem;
+  color: #ffffff;
+  -webkit-transition: color 0.3s; /* Safari */
+   transition: color 0.3s;
 }
 
-.sitemap ul {
-  list-style-type: none; 
-  padding: 0px;
+.social-icon:hover {
+  color: #e0e0e0;
+  -webkit-transition: color 0.3s; /* Safari */
+  transition: color 0.3s;
 }
+
