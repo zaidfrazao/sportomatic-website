@@ -74,7 +74,11 @@ section {
   transition: font-size 0.3s, color 0.3s;
 }
 
-#values h3 {
+blockquote {
+	border-left: 5px solid #FF9800;
+}
+
+#values h3, #mission h3 {
   font-size: 1.4rem;
   -webkit-transition: color 0.3s; /* Safari */
   transition: color 0.3s;
