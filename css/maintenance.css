@@ -1,3 +1,28 @@
 header {
   height: 100vh;
+  background-color: #fff;
+  color: #000;
 }
+
+#heading_main {
+	color: #03a9f4; 
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #03a9f4;
+     box-shadow: 0 1px 0 0 #03a9f4;
+   }
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #0288d1;
+  box-shadow: 0 1px 0 0 #0288d1;
+}
+.input-field textarea[class=materialize-textarea]:focus {
+  border-bottom: 1px solid #0288d1;
+  box-shadow: 0 1px 0 0 #0288d1;
+}
+   
+ /* icon prefix focus color */
+.input-field .prefix.active {
+    color: #03a9f4;
+   }
