@@ -26,6 +26,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/default.css" media="screen, projector">
     <link rel="stylesheet" href="css/about.css" media="screen, projector">
+	
   </head>
 
   <body>
@@ -68,7 +69,7 @@
 	  <li class="tab"><a href="#vision">Vision</a></li>
       <li class="tab"><a href="#values">Values</a></li>
       <li class="tab"><a href="#team">Team</a></li>
-      <!-- <li class="tab"><a href="#contact">Contact</a></li> -->
+      <li class="tab"><a href="#contact">Contact</a></li>
     </ul>
   
     <!-- Main content -->
@@ -235,51 +236,49 @@
           </div>
         </section>
 
-        <!-- Contact 
+        <!-- Contact -->
         <section id="contact">
+		<div id="my_form" onsubmit="submitForm(); return false;">
           <h2>Contact</h2>
-           Contact form 
-          <p>Send us a message. We'd love to hear from you!</p>
-		  <div id="form-messages"></div>
-          <form id="ajax-contact" action="mailer.php" method="post">
+          <!--  Contact form --> 
+          <p>Send us a message. We'd love to hear from you!</p>	  
+          <form>
             <div class="row">
               <div class="input-field col s3">
                 <i class="material-icons prefix">account_circle</i>
-                <input id="name" name="name" type="text" class="validate" required autocomplete="on">
+                <input id="n" name="name" type="text" class="validate" required autocomplete="on">
                 <label for="name">Name</label>
               </div>
               <div class="input-field col s9">
                 <i class="material-icons prefix">email_circle</i>
-                <input id="email" name="email" type="email" class="validate" required autocomplete="on">
+                <input id="e" name="email" type="email" class="validate" required autocomplete="on">
                 <label for="email">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
-                <input id="name" type="text" name="subject" class="validate" length="30" required autocomplete="off">
+                <input id="s" type="text" name="subject" class="validate" length="30" required autocomplete="off">
                 <label for="name">Subject</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
                 <i class="material-icons prefix">mode_edit</i>
-                <textarea id="icon_prefix2" class="materialize-textarea" name="message" length="250" required autocomplete="off"></textarea>
+                <textarea id="m" class="materialize-textarea" name="message" length="250" required autocomplete="off"></textarea>
                 <label for="icon_prefix2">Message</label>
               </div>
             </div>
-            <button class="contact-submit-btn waves-effect waves-light btn light-blue white-text right" 
-              type="submit">Send</button>
+            <input id="mybtn" class="contact-submit-btn waves-effect waves-light btn light-blue white-text right" 
+              type="submit" value="send"><span id="status"></span>
           </form>
-        </div>
+		 </div>
         </section>
 		
-
-    
 		<div id="contact-success" class="card-panel light-blue hide">
 			<span class="white-text">Thank you for your email. A chapter representative will contact you within 24 to 48 hours.</span>
 		</div>	
-		-->	
+	
       </main>
     </div>
 	
@@ -383,8 +382,8 @@
       </div>
     </footer>
 	
-	<!--Importing jquery and appJS
-     <script src="app.js"></script>
-	 -->
+   <!--App.js import --> 
+   <script type="text/javascript" src="app.js" ></script>
+   
   </body>
 </html>

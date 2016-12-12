@@ -1,51 +1,23 @@
 <?php
-
-    // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get the form fields and remove whitespace.
-        $name = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
-        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $message = trim($_POST["message"]);
-
-        // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
-            exit;
-        }
-
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "atheyrichard@gmail.com";
-
-        // Set the email subject.
-        $subject = "Sportomatic Webpage Contact Form";
-
-        // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
-        $email_content .= "Message:\n$message\n";
-
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
-
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            print "<p class='success'>Contact Mail Sent.</p>";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
-        }
-
-    } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
-    }
-
+//if statment checks if all 4 values are set and are posted from the ajax 
+if( isset($_POST['n']) && isset($_POST['e']) && isset($_POST['m']) && isset($_POST['s']) ){ 
+   //Local php variables for the values of n,e,s,m
+	$n = $_POST['n']; // HINT: use preg_replace() to filter the data
+	$e = $_POST['e']; 
+	$s = $_POST['s'];
+	$m = nl2br($_POST['m']); //n12br function changes new lines in the message to break tages<br> to keep the structure of the message
+	$to = "info@sportomaticapp.com";	//email to which the contact form is sent to
+	$from = $e; //form user email
+	$subject = $s; //email subject
+	$message = '<b>Name:</b> '.$n.' <br><b>Email:</b> '.$e.' <p>'.$m.'</p>'; //email message
+	$headers = "From: $from\n"; 
+	$headers .= "MIME-Version: 1.0\n";
+	$headers .= "Content-type: text/html; charset=iso-8859-1\n"; //allows the use of html elements in the email
+	//return to ajax success or error message from server side
+	if( mail($to, $subject, $message, $headers) ){
+		echo "success";
+	} else {
+		echo "The server failed to send the message. Please try again later.";
+	}
+}
 ?>
