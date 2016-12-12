@@ -13,7 +13,7 @@ function submitForm(){
 	ajax.onreadystatechange = function() {
 		if(ajax.readyState == 4 && ajax.status == 200) {
 			if(ajax.responseText == "success"){
-				_("my_form").innerHTML = '<p>Thanks '+_("n").value+'. Your message has been sent.</p>';
+				_("my_form").innerHTML = '<h5>Thanks '+_("n").value+'. Your message has been sent.</h5>';
 			} else {
 				_("status").innerHTML = ajax.responseText;
 				_("mybtn").disabled = false;
