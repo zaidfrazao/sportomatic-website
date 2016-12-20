@@ -1,21 +1,20 @@
+/* GENERAL TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Poppins, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
   color: #03a9f4;
 }
 
 p {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.125rem;
   line-height: 1.618;
 }
 
-.signup-btn {
-  margin: 0.4rem;
-}
-
-/* Links */
+/* LINKS */
 a {
-  color: #ff3d00;  
+  color: #ff3d00;
 }
 
 li.active {
@@ -23,6 +22,71 @@ li.active {
   color: #ffffff !important;
 }
 
+ul {
+  padding: 0;
+}
+
+/* MAIN NAVIGATION */
+.brand-logo img {
+  height: 42px;
+  width: auto;
+  margin: 8px 0;
+  transition: filter 0.3s;
+  -webkit-transition: filter 0.3s; /* Safari */
+}
+
+.brand-logo img:hover {
+  filter: brightness(80%);
+  transition: filter 0.3s;
+  cursor: pointer;
+  -webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
+  -webkit-transition: filter 0.3s; /* Safari */
+}
+
+/* TABLE OF CONTENTS NAVIGATION */
+.table-of-contents {
+  margin-top: 4rem;
+}
+.table-of-contents a.active {
+  border-color: #ff9800;
+  font-weight: bold;
+}
+.table-of-contents a:hover {
+  border-color: #ff9800;
+}
+
+/* GENERAL HEADER */
+header {
+  height: 50vh;
+  padding: 4rem 10%;
+  text-align: center;
+  background-color: #03a9f4;
+  background-image: url("../img/banner-bg.jpg");
+  background-position: center;
+  min-height: 400px;
+  color: #ffffff;
+}
+
+header p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+/* GENERAL LAYOUT */
+section {
+  padding: 4rem;
+}
+.main-left-col {
+  margin: 0;
+  padding: 0 !important;
+}
+
+/* BUTTONS */
 .btn:hover.light-blue, .btn-large:hover.light-blue {
   background-color: #4fc3f7 !important;
 }
@@ -31,44 +95,7 @@ li.active {
   background-color: #ffb74d !important;
 }
 
-/* Main navigation bar */
-.brand-logo img {
-  height: 4rem;
-  width: 22rem;
-  -webkit-transition: filter 0.3s; /* Safari */
-   transition: filter 0.3s;
-}
-
-.brand-logo img:hover {
-  -webkit-filter: brightness(80%); /* Safari 6.0 - 9.0 */
-  filter: brightness(80%);
-  -webkit-transition: filter 0.3s; /* Safari */
-  transition: filter 0.3s;
-  cursor: pointer;
-}
-
-.tabs li a {
-  color: #ffffff !important;
-}
-
-.tabs .indicator {
-  background-color: #ffffff;
-}
-
-/* Header */
-header {
-  height: 50vh;
-  padding: 4rem;
-  text-align: center;
-  background-color: #03a9f4;
-  color: #ffffff;
-}
-
-header h1 {
-  color: #ffffff;
-}
-
-/* Footer */
+/* GENERAL FOOTER */
 .contact-icon {
   margin: 10px 0;
   color: #ffffff;
@@ -100,13 +127,23 @@ section, footer {
   font-size: 2rem;
   padding: 1rem;
   color: #ffffff;
+  transition: color 0.3s;
   -webkit-transition: color 0.3s; /* Safari */
-   transition: color 0.3s;
 }
 
 .social-icon:hover {
   color: #e0e0e0;
-  -webkit-transition: color 0.3s; /* Safari */
   transition: color 0.3s;
+  -webkit-transition: color 0.3s; /* Safari */
 }
 
+/* RESPONSIVENESS */
+@media only screen and (min-width: 601px) {
+  .brand-logo img {
+    width: auto;
+    margin: 12px 0;
+  }
+  header h1 {
+    font-size: 4.2rem;
+  }
+}
