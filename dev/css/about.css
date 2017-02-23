@@ -21,6 +21,9 @@ section h2 {
 #vision-statement .valign, #contact .valign, #our-team .valign {
   margin: 0 auto;
 }
+#contact .valign {
+  width:100%;
+}
 
 /* VALUE STATEMENT */
 blockquote {
