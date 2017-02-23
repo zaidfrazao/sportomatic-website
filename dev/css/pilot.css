@@ -1,0 +1,100 @@
+/* LAYOUT */
+section {
+  margin: 0rem 0;
+}
+.feature-inner {
+  padding: 0rem 0;
+}
+.feature-text {
+  padding: 0 1rem;
+  text-align: center;
+
+}
+.feature-text > h3 {
+  text-align: center;
+}
+.feature img {
+  width: 100%;
+  height: auto;
+}
+
+/* COLOURS */
+h4 {
+  color: #ffffff;
+}
+.blue-section {
+  background-color: #03a9f4;
+  color: #ffffff;
+}
+.blue-section h2, .blue-section h3 {
+  color: #ffffff;
+}
+.blue-section h4 {
+  color: #e1f5fe;
+}
+
+/* TYPOGRAPHY */
+.feature-text > p {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+h3 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (min-width: 601px) {
+  h3 {
+    text-align: left;
+    font-size: 3.4rem;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 80%;
+  }
+  #home-about p, #home-blog p {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    width: 60%;
+  }
+  #home-about p, #home-blog p {
+    width: 50%;
+  }
+}
+
+/* CONTACT SECTION */
+.input-field input[type=text]:focus + label {
+  color: #0288d1;
+}
+.input-field input[type=email]:focus + label {
+  color: #0288d1;
+}
+.input-field textarea[class=materialize-textarea]:focus + label {
+  color: #0288d1;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #0288d1;
+  box-shadow: 0 1px 0 0 #0288d1;
+}
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #0288d1;
+  box-shadow: 0 1px 0 0 #0288d1;
+}
+.input-field textarea[class=materialize-textarea]:focus {
+  border-bottom: 1px solid #0288d1;
+  box-shadow: 0 1px 0 0 #0288d1;
+}
+.input-field .prefix.active {
+ color: #0288d1;
+}
+.contact-submit-btn {
+  margin: 1.6rem;
+}
+#contact p {
+  text-align: center;
+}

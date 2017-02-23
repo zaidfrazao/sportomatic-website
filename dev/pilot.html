@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sportomatic has a wide range of features
+    geared towards helping your institution stay at the top of the log.">
+    <meta name="keywords" content="Sports, Management, Software, Hour Logging,
+    Coaches, School, Scheduling, Reports, Analytics, Billing, Sportomatic">
+    <meta name="author" content="Richard Athey">
+
+    <title>Pilot Period | Sportomatic</title>
+
+    <!--Import icons -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+    <!--Import Materialize-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/reset.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="css/default.css" media="screen, projector">
+    <link rel="stylesheet" href="css/pilot.css" media="screen, projector">
+  </head>
+
+  <body>
+    <!-- Main site navigation bar -->
+    <div class="navbar-fixed">
+      <nav class="white main-nav nav-extended light-blue-text">
+        <div class="nav-wrapper">
+          <h1 class="hide">Sportomatic</h1>
+          <a href="index.html" class="brand-logo center"><img src="img/logo-small.png"></a>
+          <a href="#" data-activates="mobile-menu" class="right button-collapse light-blue-text"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+            <li><a class="light-blue-text" href="index.html">Home</a></li>
+            <li><a class="light-blue-text" href="about.html">About</a></li>
+            <li><a class="light-blue-text" href="features.html">Features</a></li>
+            <li><a class="light-blue-text" href="blog/">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="side-nav" id="mobile-menu">
+      <li><a class="light-blue-text" href="index.html">Home</a></li>
+      <li><a class="light-blue-text" href="about.html">About</a></li>
+      <li><a class="light-blue-text" href="features.html">Features</a></li>
+      <li><a class="light-blue-text" href="blog/">Blog</a></li>
+    </ul>
+
+    <!-- Header content -->
+    <header id="features-header" class="valign-wrapper z-depth-2">
+      <div class="valign row">
+        <h1>Nothing to lose, features to gain!</h1>
+        <h4>Only 8 spots left!
+        </h4>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <div class="row">
+        <div>
+          <!-- Pilot Period -->
+          <section id="pilot" >
+            <div class="feature-inner">
+              <div>
+                <div class="feature-text">
+                  <h3>PILOT PERIOD</h3>
+                  <!--<p>Your entire sports calendar in your pocket.</p>-->
+                  <p>We are looking for schools to join the Sportomatic team on a 1 month, complimentary pilot period. </p>
+                  <p>You get to test the product without paying a cent!</p>
+                  <p>When you decide to join the family you will be given 2 home warming gifts in the form of additional features. </p>
+                <!--  <p>Your managers and coaches will receive that
+                  week's schedule, knowing exactly where they need to be,
+                  when they need to be there.</p>
+                  <p>Should there be any changes, Sportomatic
+                  will make sure that relevant people are notified.</p> -->
+                </div>
+              </div>
+            </div>
+          </section>
+         <!--Contact Us-->
+         <div id="contact">
+           <section>
+             <div id="my_form" onsubmit="submitForm(); return false;">
+               <h2 class="center-align">Contact Us</h2>
+               <p>Send us a message. We'd love to hear from you!</p>
+               <form>
+                 <div class="row">
+                   <div class="input-field col l3 m3 s12">
+                     <i class="material-icons prefix">account_circle</i>
+                     <input id="n" name="name" type="text" class="validate" required autocomplete="on">
+                     <label for="name">Name</label>
+                   </div>
+                   <div class="input-field col l9 m9 s12">
+                     <i class="material-icons prefix">email_circle</i>
+                     <input id="e" name="email" type="email" class="validate" required autocomplete="on">
+                     <label for="email">Email</label>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="input-field col l12 m12 s12">
+                     <i class="material-icons prefix">subject</i>
+                     <input id="s" type="text" name="subject" class="validate" length="30" required autocomplete="off">
+                     <label for="name">Subject</label>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="input-field col l12 m12 s12">
+                     <i class="material-icons prefix">mode_edit</i>
+                     <textarea id="m" class="materialize-textarea" name="message" length="250" required autocomplete="off"></textarea>
+                     <label for="icon_prefix2">Message</label>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="input-field col l12 m12 s12">
+                     <input id="mybtn" class="contact-submit-btn waves-effect waves-light btn light-blue white-text right"
+                       type="submit" value="send">
+                   </div>
+                   <span id="status"></span>
+                 </div>
+               </form>
+             </div>
+             <div id="contact-success" class="card-panel light-blue hide">
+                <span class="white-text">Thank you for your email. A chapter representative will contact you within 24 to 36 hours.</span>
+             </div>
+           </section>
+         </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer content -->
+    <footer class="page-footer light-blue pin-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="footer-section col l6 m12 s12">
+            <h5 class="hide white-text">Contact</h5>
+            <div class="row">
+              <div class="col l6 m6 s12 center">
+                <span class="contact-icon ion-information"></span>
+                <h6 class="white-text">Info</h6>
+                <p class="light white-text">info@sportomaticapp.com</p>
+              </div>
+              <div class="col l6 m6 s12 center">
+                <span class="contact-icon ion-help"></span>
+                <h6 class="white-text">Support</h6>
+                <p class="light white-text">support@sportomaticapp.com</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col l6 m6 s12 center">
+                <span class="contact-icon ion-ios-telephone"></span>
+                <h6 class="white-text center">Call</h6>
+                <p class="light white-text">072 833 7052</p>
+              </div>
+              <div class="col l6 m6 s12 center">
+                <span class="contact-icon ion-location"></span>
+                <h6 class="white-text center">Address</h6>
+                <p class="light white-text">63 Alexandra Street, Florida</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section col l5 offset-l1 m12 s12">
+            <div class="row">
+              <h6 class="white-text">Follow Us</h6>
+              <ul class="social-media-btns white-text">
+                <li><a href="https://web.facebook.com/sportomaticapp/" target="_blank" title="Like us on Facebook!">
+                    <span class="social-icon ion-social-facebook"></span></a></li>
+                <li><a href="https://twitter.com/sportomaticsa" target="_blank" title="Follow us on Twitter!">
+                    <span class="social-icon ion-social-twitter"></span></a></li>
+                <li><a href="https://za.pinterest.com/sportomaticsa/" target="_blank" title="Follow us on Pinterest!">
+                    <span class="social-icon ion-social-pinterest"></span></a></li>
+                <li><a href="https://www.instagram.com/sportomaticpics/?hl=en" target="_blank" title="Follow us on Instagram!">
+                    <span class="social-icon ion-social-instagram"></span></a></li>
+                <li><a href="https://www.linkedin.com/company/10850400?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10850400%2Cidx%3A1-1-1%2CtarId%3A1481287638272%2Ctas%3Asportomatic" target="_blank" title="View our LinkIn company profile!">
+                    <span class="social-icon ion-social-linkedin"></span></a></li>
+                <li><a href="https://plus.google.com/104821066249653946599" target="_blank" title="Follow us on Google+!">
+                    <span class="social-icon ion-social-googleplus"></span></a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <h5 class="white-text hide">Sitemap</h5>
+              <div class="col l4 s4">
+                <h6><a class="white-text center" href="about.html">About</a></h6>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="about.html#vision">Vision Statement</a></li>
+				          <li><a class="grey-text text-lighten-3" href="about.html#mission">Mission</a></li>
+                  <li><a class="grey-text text-lighten-3" href="about.html#values">Values</a></li>
+                  <li><a class="grey-text text-lighten-3" href="about.html#team">Our Team</a></li>
+                  <li><a class="grey-text text-lighten-3" href="about.html#contact">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col l4 s4">
+                <h6><a class="white-text center" href="features.html">Features</a></h6>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="features.html#scheduling">Scheduling</a></li>
+                  <li><a class="grey-text text-lighten-3" href="features.html#hour-logging">Hour Logging</a></li>
+                  <li><a class="grey-text text-lighten-3" href="features.html#user-accounts">User Accounts</a></li>
+                  <li><a class="grey-text text-lighten-3" href="features.html#notifications">Notifications</a></li>
+                  <li><a class="grey-text text-lighten-3" href="features.html#reports">Reports</a></li>
+                  <li><a class="grey-text text-lighten-3" href="features.html#analytics">Analytics</a></li>
+                  <li><a class="grey-text text-lighten-3" href="features.html#billing">Invoices</a></li>
+                </ul>
+              </div>
+              <div class="col l4 s4">
+                <h6><a class="white-text center" href="blog/">Blog</a></h6>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="blog/">Home</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        	&copy; 2016 Sportomatic. All Rights Reserved. Media designed by Freepik and distributed by Flaticon.
+        </div>
+      </div>
+    </footer>
+
+    <!--Import scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js" ></script>
+    <script type="text/javascript" src="js/contact.js" ></script>
+  </body>
+</html>
