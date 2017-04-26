@@ -1,0 +1,86 @@
+/* GENERAL LAYOUT & TYPOGRAPHY */
+.section-wrapper {
+  min-height: 0px;
+}
+section h3 {
+  font-size: 1rem;
+}
+section h2 {
+  font-size: 2.6rem;
+}
+.blue-section {
+  background-color: #03a9f4;
+  color: #ffffff;
+}
+.blue-section h2, .blue-section h3 {
+  color: #ffffff;
+}
+.blue-section h4 {
+  color: #e1f5fe;
+}
+.valign {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+#features-header h4 {
+  color: #ffffff;
+}
+#pilot {
+  padding-bottom: 15px;
+}
+#vision-statement .valign, #contact .valign, #our-team .valign {
+  margin: 0 auto;
+}
+#contact .valign {
+  width:100%;
+}
+#contact h2 {
+  margin-top: 0px;
+}
+
+
+/* CONTACT SECTION */
+.input-field input[type=text]:focus + label {
+  color: #0288d1;
+}
+.input-field input[type=email]:focus + label {
+  color: #0288d1;
+}
+.input-field textarea[class=materialize-textarea]:focus + label {
+  color: #0288d1;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #0288d1;
+  box-shadow: 0 1px 0 0 #0288d1;
+}
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #0288d1;
+  box-shadow: 0 1px 0 0 #0288d1;
+}
+.input-field textarea[class=materialize-textarea]:focus {
+  border-bottom: 1px solid #0288d1;
+  box-shadow: 0 1px 0 0 #0288d1;
+}
+.input-field .prefix.active {
+ color: #0288d1;
+}
+.contact-submit-btn {
+  margin: 1.6rem;
+}
+#contact p {
+  text-align: center;
+}
+
+/* RESPONSIVENESS */
+@media only screen and (min-width: 601px) {
+  h3 {
+    text-align: left;
+  }
+  section h2 {
+    font-size: 3.4rem;
+  }
+  blockquote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+}
